@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 "use strict";
 
-var inquirer = require("inquirer");
-var chalk = require("chalk");
+let inquirer = require("inquirer");
+let chalk = require("chalk");
 
-var response = chalk.blue;
+let response = chalk.blue;
 
-var resume = require("./resume.json");
+let resume = require("./resume.json");
 
-var resumePrompts = {
+let resumePrompts = {
   type: "list",
   name: "resumeOptions",
   message: "What would you like to know about me?",
@@ -25,7 +25,7 @@ function resumeHandler() {
     if (answer.resumeOptions == "Exit") {
       return;
     }
-    var option = answer.resumeOptions;
+    let option = answer.resumeOptions;
     console.log(response("<><><><><><><><><><><><><><><><><><>"));
     resume[`${option}`].forEach(info => {
       console.log(response("|   => " + info));
