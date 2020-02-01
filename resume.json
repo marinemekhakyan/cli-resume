@@ -10,66 +10,70 @@
             "Company": "Security Pro USA",
             "Title": "Digital Content Manager",
             "Description": "Day-to-day manager of marketing content and materials on different media channels. Wordpress and Shopify based websites admin. Driver of SEO, Mailchimp, Google & Facebook ads."
-          },
-          {
+        },
+        {
             "Company": "Decolux LA",
             "Title": "Digital Content Manager",
             "Description": "The wear-all-hats person running weekly newsletters, social media ads, marketing content to media channels, events and occasional admin tasks."
-          }
+        }
     ],
     "Tech Skills": [
         {
-          "Skill": "Front-End",
-          "Languages & Frameworks": "JavaScript, React.js, HTML5 & CSS3, JQuery."
+            "Skill": "Front-End",
+            "Languages & Frameworks": "JavaScript, React.js, HTML5 & CSS3, JQuery."
         },
         {
-          "Skill": "Back-End",
-          "Languages & Frameworks": "Node.js, Express, Sequelize."
+            "Skill": "Back-End",
+            "Languages & Frameworks": "Node.js, Express, Sequelize."
         },
         {
-          "Skill": "Design & Editing",
-          "Tools": "Adobe Creative Suite"
+            "Skill": "Design & Editing",
+            "Tools": "Adobe Creative Suite"
         },
         {
-          "Skill": "Web Admin",
-          "CMS": "Wordpress, Shopify"
+            "Skill": "Web Admin",
+            "CMS": "Wordpress, Shopify"
         },
         {
-          "Skill": "Databases",
-          "Frameworks": "MySQL, MongoDB, Firebase"
+            "Skill": "Databases",
+            "Frameworks": "MySQL, MongoDB, Firebase"
         }
-      ],
-      "Projects": [
+    ],
+    "Other Skills": [
         {
-          "Name": "HelpFull",
-          "Link": "https://mkdr-project2.herokuapp.com/",
-          "Description": "Platform for businesses to register free services for their communities during natural disasters.",
-          "Technologies": "Javascript, Node, MySQL, Sequelize, HTML & CSS."
-        },
-        {
-          "Name": "TiskTask",
-          "Link": "https://tisktask.herokuapp.com/",
-          "Description": "Full-stack app allowing Landlords and Tenants to manage ongoing maintenance issues in one platform.",
-          "Technologies": "React, ES6, MySQL, Node, Sequelize, BCrypt, CSS, Sass."
-            
+            "Languages": "English, Armenian, Russian"
         }
-      ],
-      "Contact Me": [
+    ],
+    "Projects": [
         {
-          "Name": "Website",
-          "Link": "https://marinemekhakyan.dev"
+            "Name": "HelpFull",
+            "Link": "https://mkdr-project2.herokuapp.com/",
+            "Description": "Platform for businesses to register free services for their communities during natural disasters.",
+            "Technologies": "Javascript, Node, MySQL, Sequelize, HTML & CSS."
         },
         {
-          "Name": "GitHub",
-          "Link": "https://github.com/marinemekhakyan"
-        },
-        {
-          "name": "LinkedIn",
-          "link": "https://www.linkedin.com/in/marine-mekhakyan"
-        },
-        {
-          "name": "Email",
-          "link": "marinemekhakyan@gmail.com"
+            "Name": "TiskTask",
+            "Link": "https://tisktask.herokuapp.com/",
+            "Description": "Full-stack app allowing Landlords and Tenants to manage ongoing maintenance issues in one platform.",
+            "Technologies": "React, ES6, MySQL, Node, Sequelize, BCrypt, CSS, Sass."
         }
-      ]
+    ],
+    "Contact Me": [
+        {
+            "Name": "Website",
+            "Link": "https://marinemekhakyan.dev"
+        },
+        {
+            "Name": "GitHub",
+            "Link": "https://github.com/marinemekhakyan"
+        },
+        {
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/marine-mekhakyan"
+        },
+        {
+            "name": "Email",
+            "link": "marinemekhakyan@gmail.com"
+        }
+    ]
 }
