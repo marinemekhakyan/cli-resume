@@ -8,7 +8,7 @@ const response = chalk.blue;
 const title = chalk.bold.green;
 
 let resume = require("./resume.json");
-let dividerConstructor = require("./helpers/divider.js");
+let dividerConstructor = require("./divider.js");
 let divider = new dividerConstructor(70, "green");
 
 let resumePrompts = {
