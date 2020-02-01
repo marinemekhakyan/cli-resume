@@ -4,9 +4,12 @@
 let inquirer = require("inquirer");
 let chalk = require("chalk");
 
-let response = chalk.blue;
+const response = chalk.blue;
+const title = chalk.bold.green;
 
 let resume = require("./resume.json");
+let dividerConstructor = require("./helpers/divider.js");
+let divider = new dividerConstructor(70, "green");
 
 let resumePrompts = {
   type: "list",
@@ -26,12 +29,27 @@ function resumeHandler() {
       return;
     }
     let option = answer.resumeOptions;
-    console.log(response("<><><><><><><><><><><><><><><><><><>"));
-    resume[`${option}`].forEach(info => {
-      console.log(response("|   => " + info));
+
+    divider.printTop();
+
+    resume[`${option}`].forEach((info, ind) => {
+        if (typeof info === "string") {
+            console.log(divider.containString(` ${info}`, response));
+        } else {
+            Object.values(info).forEach((value, ind) => {
+                if (ind > 1) {
+                    console.log(divider.containString(` ${value}`, response));
+                } else if (ind === 1) {
+                    console.log(divider.containString(` ${value}`, chalk.cyan.bold));
+                } else {
+                    console.log(divider.containString(` ${value.padEnd(38)}`, title));
+                }
+            });
+            ind !== resume[`${option}`].length - 1 && divider.printLine();
+        }
     });
-    console.log(response("<><><><><><><><><><><><><><><><><><>"));
-    // console.log(resume[`${option}`]);
+    divider.printBottom();
+      
     inquirer
       .prompt({
         type: "list",
