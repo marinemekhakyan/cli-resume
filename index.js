@@ -4,7 +4,7 @@
 let inquirer = require("inquirer");
 let chalk = require("chalk");
 
-const response = chalk.blue;
+const response = chalk.white;
 const title = chalk.bold.green;
 
 let resume = require("./resume.json");
@@ -42,7 +42,7 @@ function resumeHandler() {
                 } else if (ind === 1) {
                     console.log(divider.containString(` ${value}`, chalk.cyan.bold));
                 } else {
-                    console.log(divider.containString(` ${value.padEnd(38)}`, title));
+                    console.log(divider.containString(` ${value.padEnd(78)}`, title));
                 }
             });
             ind !== resume[`${option}`].length - 1 && divider.printLine();

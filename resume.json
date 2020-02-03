@@ -1,8 +1,17 @@
 {
     "Education": [
-        "Full Stack Web Development Bootcamp Certificate from the University of California - Los Angeles, Extension",
-        "BA in Linguistics from Yerevan State University of Linguistics & Social Sciences",
-        "MA in Public Administration from Yerevan State University of Linguistics & Social Sciences"
+        {
+            "Bootcamp": "UCLA Extension",
+            "Certificate": "Full Stack Web Development Bootcamp Certificate"
+        },
+        {
+            "Uni": "Yerevan State University of Linguistics & Social Sciences",
+            "Certificate": "BA in Linguistics"
+        },
+        {
+            "Uni": "Yerevan State University of Linguistics & Social Sciences",
+            "Certificate": "MA in Public Administration"
+        }
     ],
     "Experience": [
         {
