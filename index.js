@@ -9,7 +9,7 @@ const title = chalk.bold.green;
 
 let resume = require("./resume.json");
 let dividerConstructor = require("./divider.js");
-let divider = new dividerConstructor(70, "green");
+let divider = new dividerConstructor(70, "cyan");
 
 let resumePrompts = {
   type: "list",
