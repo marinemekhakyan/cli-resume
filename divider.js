@@ -5,10 +5,6 @@ let dividerObject = function (num, defaultColor) {
     this.length = num;
     this.color = defaultColor;
     let {
-        topLeft,
-        topRight,
-        bottomRight,
-        bottomLeft,
         vertical,
         horizontal
     } = box;
@@ -16,22 +12,20 @@ let dividerObject = function (num, defaultColor) {
     this.printTop = function () {
         console.log(
             chalk[`${this.color}`](
-                topLeft + horizontal.repeat(this.length) + topRight
+                horizontal.repeat(this.length)
             )
         );
     };
     this.printBottom = function () {
         console.log(
             chalk[`${this.color}`](
-                bottomLeft + horizontal.repeat(this.length) + bottomRight
+                horizontal.repeat(this.length)
             )
         );
     };
     this.printLine = function () {
         console.log(
-            vertical +
-            chalk[`${this.color}`](horizontal.repeat(this.length)) +
-            vertical
+            chalk[`${this.color}`](horizontal.repeat(this.length))
         );
     };
     this.printVertical = function () {
