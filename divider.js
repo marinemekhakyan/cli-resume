@@ -1,4 +1,4 @@
-let box = require("./box.json");
+let border = require("./border.json");
 let chalk = require("chalk");
 
 let dividerObject = function (num, defaultColor) {
@@ -7,7 +7,7 @@ let dividerObject = function (num, defaultColor) {
     let {
         vertical,
         horizontal
-    } = box;
+    } = border;
 
     this.printTop = function () {
         console.log(
