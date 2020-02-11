@@ -1,6 +1,6 @@
 # cli-resume
 
-Resume / NPM Package (it goes both ways) 
+My Resume as an NPM Package (strictly for cool HR's)
 
 ![](https://github.com/marinemekhakyan/cli-resume/blob/master/readme-gif.gif?raw=true)
 
