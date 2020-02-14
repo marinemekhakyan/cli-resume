@@ -33,23 +33,23 @@ function resumeHandler() {
     divider.printTop();
 
     resume[`${option}`].forEach((info, ind) => {
-        if (typeof info === "string") {
-            console.log(divider.containString(` ${info}`, response));
-        } else {
-            Object.values(info).forEach((value, ind) => {
-                if (ind > 1) {
-                    console.log(divider.containString(` ${value}`, response));
-                } else if (ind === 1) {
-                    console.log(divider.containString(` ${value}`, chalk.cyan.bold));
-                } else {
-                    console.log(divider.containString(` ${value.padEnd(78)}`, title));
-                }
-            });
-            ind !== resume[`${option}`].length - 1 && divider.printLine();
-        }
+      if (typeof info === "string") {
+        console.log(divider.containString(` ${info}`, response));
+      } else {
+        Object.values(info).forEach((value, ind) => {
+          if (ind > 1) {
+            console.log(divider.containString(` ${value}`, response));
+          } else if (ind === 1) {
+            console.log(divider.containString(` ${value}`, chalk.cyan.bold));
+          } else {
+            console.log(divider.containString(` ${value.padEnd(78)}`, title));
+          }
+        });
+        ind !== resume[`${option}`].length - 1 && divider.printLine();
+      }
     });
     divider.printBottom();
-      
+
     inquirer
       .prompt({
         type: "list",
